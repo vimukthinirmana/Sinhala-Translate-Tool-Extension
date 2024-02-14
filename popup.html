@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d188e387e4.js" crossorigin="anonymous"></script>
+  <title>Sinhala Translator Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      max-width: 400px;
+      max-height: -webkit-fill-available;
+      border: 1px solid gray;
+    }
+
+    #main-Heder{
+      text-align: center;
+    }
+
+    #main-SubHeder{
+      margin-left: 5px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    textarea {
+      width: 344px;
+      margin: 5px;
+      resize: none;
+    }
+
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      align-items: center;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      background-color: #e0e0e0;
+      padding: 4px;
+    }
+
+    footer p span{
+      color: rgb(75, 75, 253);
+    }
+
+    .clipboard-icon {
+    cursor: pointer;
+    position: absolute;
+    }
+
+    label{
+      margin: 5px;
+    }
+   
+
+
+  </style>
+</head>
+<body>
+  <h1 id="main-Heder">Sinhala Translator</h1>
+  <p id="main-SubHeder">Use this panel to translate text to Sinhala.</p>
+  
+  <div>
+    <label for="input-txtId">Enter text to translate:</label>
+    <textarea name="input-text" id="input-txtId" cols="30" rows="4"></textarea>
+    <button id="translateBtn">Translate</button>
+  </div>
+  
+  <div id="translate-panel">
+    <label for="output-textId">Translated text:&nbsp</label>
+    <span class="clipboard-icon" id="clipboard-Id" onclick="copyToClipboard('output-textId')"><i class="fa-regular fa-clipboard"></i></span>
+    <textarea name="output-text" id="output-textId" cols="30" rows="4" readonly></textarea>
+  </div>
+
+  <footer>
+    <p><img src="icon16.png" alt=""> Version 1.0 - <span>Developed by Kvns</span></p>
+  </footer>
+
+  <script src="options.js"></script>
+</body>
+</html>
