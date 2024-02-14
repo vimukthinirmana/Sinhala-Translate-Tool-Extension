@@ -6,8 +6,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   
   
   function translateText(text, callback) {
-    // Replace "YOUR_API_KEY" with your actual Google Cloud API key
-    const apiKey = "AIzaSyC3kz-KR7Tgz-3do9kktyioMQn88aZHM00";
+    // Replace "API_KEY" with  actual Google Cloud API key
+
+    // const apiKey = "AIzaSyC3kz-KR7Tgz-3do9kktyioMQn88aZHM00";
     
     // Define the Google Translate API endpoint
     const apiUrl = "https://translation.googleapis.com/language/translate/v2";
